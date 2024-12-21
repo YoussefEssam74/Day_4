@@ -276,7 +276,165 @@ namespace Day_4
             //{
             //    Console.WriteLine(arr[i]);
             //}
-            #endregion 
+            #endregion
+            /*
+             * -------------------------------------------------
+             */
+            #region Loop Statements
+            //Console.WriteLine("1");
+            //Console.WriteLine("2");
+            //Console.WriteLine("3");
+            //Console.WriteLine("4");
+            //Console.WriteLine("5");
+            //Console.WriteLine("6");
+            //Console.WriteLine("7");
+            //Console.WriteLine("8");
+            //Console.WriteLine("9");
+            //Console.WriteLine("10");
+            //100
+            //For Loop 
+            //for(int i=1; i<= 1000000;i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //int[] array = { 1, 2, 3, 4, 5 };
+            //for(int i = 0; i <=5; i++)//0 
+            //{
+            //    array[i] += 1;
+            //    Console.WriteLine(array[5]);
+            //}
+
+            ////foreach => Display --
+            //foreach (int num in array)
+            //{
+            //    //num += 1;
+            //    Console.WriteLine(num);
+            //}
+
+
+
+            #endregion
+            #region While/Do While
+            //While 
+            //Do While 
+            //int num;
+            //bool flag;
+            //do
+            //{
+            //    Console.Write("Please Enter An Even Number: ");
+            //    flag = int.TryParse(Console.ReadLine(),out num);//1
+            //} while (num %2 ==1 || !flag);//True ///False
+
+            //while (DBConnection)XXX
+            //{
+
+            //}
+
+
+            #endregion
+            #region String Format
+            // 1.Concat 
+            //Equation = 4 + 6 = 10
+            //Immutable Type => Can't Change at the address
+            //int x = 4;
+            //int y = 6;
+            ////string message = "Equation = " + x + " + " + y + " = " + (x + y);
+            ////Console.WriteLine(message);
+            ////2.
+            ////string message = string.Format("Equation:{0} + {1} = {2}", x, y, x + y);
+            ////Console.WriteLine(message);
+            ////3. String Interpolation
+            ////$
+            //string message = $"Equation : {x} + {y} = {x+y}";
+            //Console.WriteLine(message);
+            #endregion
+            #region String vs String Builder
+            //string name;
+            ////ClR Allocate 4 byte at stack
+            //// Allocate 0 bytes at heap
+            //name = "Ahmed";
+            ////CLR Allocate 10 byte at Heap
+            ////NAME assign to it's Object 
+            //Console.WriteLine(name);
+            //Console.WriteLine(name.GetHashCode());
+            //string name2 = name;
+            //Console.WriteLine(name2);
+            //Console.WriteLine(name2.GetHashCode());
+            //name2 = "Ali";
+            //Console.WriteLine("==================================");
+            //Console.WriteLine(name);
+            //Console.WriteLine(name.GetHashCode());
+            //Console.WriteLine(name2);
+            //Console.WriteLine(name2.GetHashCode());
+            //StringBuilder Class
+            //Console.WriteLine("=================String ===================");
+            //string name = "Ahmed";
+            //Console.WriteLine(name);
+            //Console.WriteLine(name.GetHashCode());
+            //name = "Ali";
+            //Console.WriteLine(name);
+            //Console.WriteLine(name.GetHashCode());
+            //Console.WriteLine("=================String StringBuilder===================");
+            //StringBuilder message = new StringBuilder();
+            //message.Append("Hello");
+            //Console.WriteLine(message);
+            //Console.WriteLine(message.GetHashCode());
+            //message.Append("Route :)");
+            //Console.WriteLine(message);
+            //Console.WriteLine(message.GetHashCode());
+
+            #endregion
+
+            #region One D Array
+            //Array Reference Type
+            //int[] nums;//Reference at Stack  4 byte
+            ////0 Bytes at Heap 
+            //nums = new int[3];//clr 12 Byte at Heap 
+            //Nums assign it's Object
+            // 0 0 0
+
+            //nums[0] = 1; //base 0 => First Element
+            //nums[1] = 2; //Second Element
+            ////nums[2] = 3; //thir
+            //  int[] nums = { 1, 2, 3 };
+            ////foreach (int i in nums)
+            ////    Console.WriteLine(i);
+
+            //for(int i  =0;i <nums.Length;i++)//Property =>KeyWord Count Elements
+            //{
+            //    Console.WriteLine(nums[i]);
+            //}
+            // Console.WriteLine($"Lenth of Array: {nums.Length} & Rank : {nums.Rank}");
+
+            #endregion
+            #region 2D Array
+            //int[,] Marks = new int[3, 5];//1
+            //bool flag = false;
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine($"Please Enter Grades of Student Number {i + 1}");
+            //    Console.WriteLine("================================================");
+            //    for (int j = 0; j < 5;)//5
+            //    {
+            //        Console.WriteLine($"Enter Subject Number {j + 1}");
+            //        flag = int.TryParse(Console.ReadLine(), out Marks[i, j]);
+            //        if (flag)
+            //            j++;
+            //    }
+            //}
+            //Console.Clear();    
+            //for(int i = 0; i<Marks.GetLength(0);i++)
+            //{
+            //    Console.WriteLine($"Grades of Student Number {i + 1}");
+            //    Console.WriteLine("================================================");
+            //    for(int j=0;j<Marks.GetLength(1);j++)
+            //    {
+            //        Console.WriteLine($"Subject Number{j + 1}:{Marks[i,j]}");
+            //    }
+            //} 
+            // //
+            #endregion    
+
         }
     }
 }
